@@ -1,5 +1,5 @@
-//import inquirer module
-//import filesystem module
+const inquirer = require('inquirer') //Inquirer module
+const fs = require('fs') //File system module
 
 //When node is called?
     //...Show questions
