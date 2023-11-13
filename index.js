@@ -66,3 +66,19 @@ inquirer
         //Get user input from answers object
         //add answers to readme template
         //add template content in fs.writeFile()
+
+const getLicenseBadge = license => {
+    let badge;
+    switch (license){
+        case 'MIT License':
+            badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+            break;
+        case 'Apache License 2.0':
+            badge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+            break;
+        case 'GNU General Public License (GPL)':
+            badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+            break;
+    }
+    return badge
+}
