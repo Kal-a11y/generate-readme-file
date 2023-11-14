@@ -33,6 +33,9 @@
 
   To use this application, first open the terminal and type `node index` to begin. The terminal will list prompts you can answer to add content to the README. When all of the questions are answered it will build a README file that is ready for use.
 
+  ![Demo gif](./Assets/Images/demoGif.gif)
+  ![Example image](./Assets/Images/example-1-img.PNG)
+
   ## License
 
   [MIT License](https://opensource.org/license/mit/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
