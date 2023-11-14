@@ -49,50 +49,57 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-    # ${data.title}
+  # ${data.title}
 
-    ${renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(data.license)}
 
-    ## Description
+  ## Description
 
-    ${data.description}
+  ${data.description}
 
-    ## Table of Contents 
+  ## Table of Contents 
 
-    [Description](#description) \
-    [Table of Contents](#table-of-contents) \
-    [Installlation](#installlation) \
-    [Usage](#usage) \
-    [License](#license) \
-    [Contributing](#contributing) \
-    [Tests](#tests) \
-    [Questions](#questions) 
+  - [Description](#description)
+
+  - [Table of Contents](#table-of-contents)
+
+  - [Installlation](#installlation)
+
+  - [Usage](#usage)
+
+  - [License](#license)
+
+  - [Contributing](#contributing)
+
+  - [Tests](#tests)
+
+  - [Questions](#questions) 
 
 
-    ## Installation
+  ## Installation
 
-    ${data.installation}
+  ${data.installation}
 
-    ## Usage
+  ## Usage
 
-    ${data.usage}
+  ${data.usage}
 
-    ## License
+  ## License
 
-    ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)}
 
-    ## Contributing
+  ## Contributing
 
-    ${data.contribution}
+  ${data.contribution}
 
-    ## Tests
+  ## Tests
 
-    ${data.tests}
+  ${data.tests}
 
-    ## Questions
+  ## Questions
 
-    GitHub: [${data.username}](https://github.com/${data.username}/)
-    Email: ${data.email}
+  - GitHub: [${data.username}](https://github.com/${data.username}/)
+  - Email: ${data.email}
 
   `;
 }
